@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+i.material-icons {
+    font-size: 30px;
+    color:#fff;
+}
+
+body{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    max-width: 1366px;
+}
+.wrapper {
+    height: 843px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.logo {
+    position: absolute;
+    top:15px;
+    left:15px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper img{
+    width: 100%;
+}
+.logo img {
+    margin-left: 65px;
+    width: 100px;
+    height: 130px;
+}
+.logoTxt{
+    padding-top:35px;
+    padding-left: 5px; 
+    font-size:1.9em;
+}
+.logoTxt .lowerHeader {
+    color:#336699;
+}
+.logoTxt .upperHeader {
+    color:#339933;
+}
+.mainTitle,.mainParag{
+    position: absolute;
+    top:130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.mainTitle h1 {
+    letter-spacing:.3em;
+    color:#fff;
+    font-weight: normal;
+    padding:10px;
+    border: 2px solid white;
+    text-align: center;
+}
+.mainParag p{
+    width: 500px;
+    position: absolute;
+    top:100px;
+    text-align: center;
+    letter-spacing:.1em;
+    font-size:1.6em;
+    color:white;
+    border-bottom:2px solid #fff;
+}
+.contacts {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact-1,.contact-2{
+    display: flex;
+    justify-content: flex-start;
+}
+.contacts p {
+    color:#fff;
+    font-size: .6em;
+    line-height: 1.5em;
+}
+.place p {
+    font-size:1em;
+}
+.mainHeader {
+    position: absolute;
+    top:300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orderBtn {
+    width: 140px;
+    height: 140px;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+    text-align: center;
+    font-family: 'Agency FB', arial;
+}
+.secondBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+.orderBtn:hover {
+    cursor: pointer; 
+    animation:bounceOut .8s linear;
+    color:black;
+}
+.orderBtn:active {
+    width: 160px;
+    height: 160px;
+    color:#fff;
+}
+
+.iconsBar {
+    height:420px;
+    /*background: linear-gradient(to top, #000 0%, #255 36%, #255 100%);*/
+    background-color:#1a1919;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.iconsBorder img {
+    width: 126px;
+    height: 126px;
+}
+.iconsBorder {
+    padding:50px;
+    border-radius: 100%;
+    box-shadow:
+    inset 0 0 100px hsla(0,0%,0%,.2),
+    inset 0px 1px 5px #001135,
+    inset 0px 2px 0px #001135,
+    inset 0px 3px 0px #001135,
+    inset 0px 4px 0px #001135,
+    inset 0px 5px 0px #001135,
+    inset 0px 6px 0px #001135,
+    inset 0px 7px 0px #001135,
+    inset 0px 8px 7#001135;
+
+    box-shadow: 0 0 10px 5px rgb(7, 0, 0);
+}
+.iconsBorder:nth-child(even){
+    border:10px dashed rgb(38, 77, 38);
+    border:10px inset rgb(38, 77, 38);
+
+}
+.iconsBorder:nth-child(odd){
+    border:10px dashed grey;
+    border:10px outset rgb(38, 77, 38);
+}
+.textWrap {
+    background-color:rgb(167, 164, 164);
+    height: 600px;
+}
+.textBar {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.textBar section {
+    width: 15%;
+}
+.textBar h3 {
+    color:#333333;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.textBar p {
+    font-family: 'Agency FB', arial;
+    text-indent: 9px;
+    background-color:#1a1919;
+    color:#fff;
+    font-size: 1.3em;
+    padding:10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 190px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+footer a {
+    text-decoration: none;
+    color:#333333;
+    border-bottom: 1px solid #333333;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@keyframes bounceOut {
+    0%{ box-shadow: 0 0 0 4px #000; opacity:2;}
+    25%{ box-shadow: 0 0 0 1px #000; opacity:2;}
+    50%{ box-shadow: 0 0 0 7px #000; opacity:2; }
+    75%{ box-shadow: 0 0 0 4px #000; opacity:2;}
+    100%{ box-shadow: 0 0 0 5px #000; opacity:2;}
+}
